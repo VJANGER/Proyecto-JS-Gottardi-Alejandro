@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Prestamos - Su banco</title>
+</head>
+<body>
+    <div class="caja">
+        <div class="titulo">
+            <h1>Bienvenido a su banco</h1>
+            <h3>Genere su prestamo en pesos, dolares o U.V.A.</h3>
+        </div>
+        <div class="monto"></div>
+            <label>Ingrese su nombre y apellido:
+                <input type="text" id="nombre" name="nombre" required>
+            </label>
+            <label>Ingrese su D.N.I.:
+                <input type="number" id="dni" name="dni" required>
+            </label>
+            <label>Ingrese el monto de su prestamo:
+                <input type="number" id="monto" name="monto" required>
+            </label>
+            <label>Seleccione el plan de cuotas que desea
+                <select id="cuotas" name="cuotas" required>
+                    <option value="">(Seleccione una opción)</option>
+                    <option value="12">12</option>
+                    <option value="18">18</option>
+                    <option value="24">24</option>
+                    <option value="36">36</option>
+                </select>
+            </label>
+            <label for="ayuda">¿Recibe alguna ayuda economíca del estado?
+                <input type="checkbox" id="ayuda" name="ayuda">
+            </label>
+            <label for="moneda">Seleccione que tipo de prestamo necesita</label>
+                    <select id="moneda"  name="moneda">
+                        <option value="">(seleccione una opción)</option>
+                        <option value="pesos">Pesos</option>
+                        <option value="dolares">Dolares</option>
+                        <option value="uva">U.V.A.</option>
+                    </select>
+        <div class="botonera">
+            <button class="cancelar">Cancelar</button>
+            <input class="aceptar" type="button" value="Simular" onclick="verificarCreditoOtorgado()">
+        </div>
+        <div id="resultado" class="resultado"></div>
+    </div>
+    <footer>copyright MMXXIII Su banco</footer>
+    <script src="./main.js"></script>
+</body>
+</html>
