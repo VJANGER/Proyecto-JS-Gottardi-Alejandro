@@ -13,74 +13,20 @@ body{
     align-items: center;
     text-align: center;
     width: 50vw;
-    height: 900px;
+    height: 800px;
     margin: 130px auto;
     border: 1px solid rgb(185, 180, 180);
     border-radius: 16px;
     box-shadow: 1px 1px 10px rgb(75, 73, 73);
     background: radial-gradient(#ffffff,#dadada)
 }
-.titulo{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: 100px;
-}
 h1{
     font-size: 3rem;
     margin: 25px 10;
 }
-
-.aceptar{
-    width: 150px;
-    height: 50px;
-    background-color: green;
-    border-radius: 8px;
-    border:none;
-    box-shadow: 1px 1px 10px rgb(75, 73, 73);
+input{
+    padding: 2rem;
 }
-
-.cancelar{
-    width: 150px;
-    height: 50px;
-    background-color: red;
-    border-radius: 8px;
-    border:none;
-    box-shadow: 1px 1px 10px rgb(75, 73, 73);
-    }
-
-
-  label {
-    margin-bottom: 5px;
-    font-weight: bold;
-  }
-  
-  input[type="number"],
-  input[type="text"],
-  select {
-    width: 95%;
-    padding: 10px;
-    margin-bottom: 5px;
-    border-radius: 5px;
-    border: none;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    font-size: 16px;
-    background-color: #ffffff;
-  }
-  
-  input[type="checkbox"] {
-    margin-top: 10px;
-  }
-  
-  button[type="submit"] {
-    background-color: #4CAF50;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
   /* Estilos para mensajes de resultado */
   .resultado {
     margin-top: 10px;
@@ -88,4 +34,3 @@ h1{
     border-radius: 5px;
     width: 65%;
   }
-
